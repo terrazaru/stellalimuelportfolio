@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+	<meta charset="utf-8">
+	<title>Stella Limuel &verbar; Graphic Designer</title>
+	<meta name="description" content="Portfolio website.">
+	<meta name="author" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/layout.css">
+	<link rel="stylesheet" href="css/stylesheet.css" type="text/css" charset="utf-8" />
+	<link href='http://fonts.googleapis.com/css?family=Roboto:300,300italic' rel='stylesheet' type='text/css'>
+
+	<link rel="icon" href="img/favicon.ico" type="image/x-icon">
+<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+
+	<!--[if lt IE 9]>
+		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>a
+	<![endif]-->
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+	<script type="text/javascript" src="js/jquery.easing.min.js"></script>	
+	<script type="text/javascript" src="js/jquery.mixitup.min.js"></script>
+
+	<script type="text/javascript" src="js/jquery.easing.min.js"></script>
+	<script type="text/javascript" src="js/jquery.mixitup.min.js"></script>
+	
+	<script type="text/javascript">
+	$(function () {
+		
+		var filterList = {
+		
+			init: function () {
+			
+				// MixItUp plugin
+				// http://mixitup.io
+				$('#portfoliolist').mixitup({
+					targetSelector: '.portfolio',
+					filterSelector: '.filter',
+					effects: ['fade'],
+					easing: 'snap',
+					// call the hover effect
+					onMixEnd: filterList.hoverEffect()
+				});				
+			
+			},
+			
+			hoverEffect: function () {
+			
+				// Simple parallax effect
+				$('#portfoliolist .portfolio').hover(
+					function () {
+						$(this).find('.label').stop().animate({bottom: 0}, 200, 'easeOutQuad');
+						$(this).find('img').stop().animate({top: -30}, 500, 'easeOutQuad');				
+					},
+					function () {
+						$(this).find('.label').stop().animate({bottom: -40}, 200, 'easeInQuad');
+						$(this).find('img').stop().animate({top: 0}, 300, 'easeOutQuad');								
+					}		
+				);				
+			
+			}
+
+		};
+		
+		// Run the show!
+		filterList.init();
+		
+		
+	});	
+	</script>
+
+</head>
+<body>
+
+<div id="info">
+	<div id="topbar">
+		<a href="index.html"><img src="img/weblogo.png" alt="Stella Limuel Logo" width="243" height="76" /></a>
+	</div>
+	<nav>
+      <ul>
+      <li><span><a href="mailto:stellalimuel@gmail.com">Email
+			</a></span></li>
+      <li><a href="http://www.linkedin.com/in/stellalimuel">LinkedIn</a></li>
+      </ul>
+    </nav>
+</div>	
+
+</div>	
+
+<div class="container">
+
+<div id="intro">
+<p style="font-family: 'core_mellow_19_cp_thinregular', Arial, sans-serif; font-size: 300%; color: #069995; margin-bottom: 15px">Hello, I'm Stella.</p>
+<img id="photo" src="img/StellaAvatar640.png" alt="Stella" width="640" height="640" />
+<div id="introp"><p style="font-size: 150%; max-width:600px; line-height: 150%">I'm a fairly newcomer in the United States, coming from the country mostly known for paradise resorts to learn the merit of graphic design. For me, design is a fascinating process that has the power to engage both the designer and the viewer. The beauty of rendered form and type seems to deeply attract me. While designing, I like to tune in to two robots making music. And when I'm not, I often find myself drawing, crafting, or finding wonders of the world.</p>
+<p style="font-family: 'core_mellow_19_cp_thinregular', Arial, sans-serif; font-size: 300%; color: #069995">Download my <a href="pdf/StellaLimuelResume2017.pdf">resume</a>.</p></div>
+</div>
+
+<div style="clear:both"></div>
+
+		<ul id="filters" class="clearfix">
+			<li><span class="filter active" data-filter="print digital dimensional">All</span></li>
+			<li><span class="filter" data-filter="print">Print</span></li>
+			<li><span class="filter" data-filter="digital">Digital</span></li>
+			<li><span class="filter" data-filter="dimensional">Dimensional</span></li>
+		</ul>
+
+		<div id="portfoliolist">
+			
+			<div class="portfolio digital" data-cat="digital">
+				<div class="portfolio-wrapper">				
+					<a href="digital1.html"><img src="img/portfolios/digital/1.jpg" alt="" />
+					<div class="label">
+						<div class="label-text">
+							<a class="text-title">The Millennial</a>
+							<span class="text-category">Digital</span>
+						</div>
+						<div class="label-bg"></div>
+					</div></a>
+				</div>
+			</div>				
+
+			<div class="portfolio print" data-cat="print">
+				<div class="portfolio-wrapper">			
+					<a href="print1.html"><img src="img/portfolios/print/1.jpg" alt="" />
+					<div class="label">
+						<div class="label-text">
+							<a class="text-title">Light Again</a>
+							<span class="text-category">Print</span>
+						</div>
+						<div class="label-bg"></div>
+					</div></a>
+				</div>
+			</div>		
+			
+			<div class="portfolio dimensional" data-cat="dimensional">
+				<div class="portfolio-wrapper">						
+					<a href="dimensional1.html"><img src="img/portfolios/dimensional/1.jpg" alt="" />
+					<div class="label">
+						<div class="label-text">
+							<a class="text-title">Re(Cycle) Hub</a>
+							<span class="text-category">Dimensional</span>
+						</div>
+						<div class="label-bg"></div>
+					</div></a>
+				</div>
+			</div>				
+			
+			<div class="portfolio print" data-cat="print">
+				<div class="portfolio-wrapper">			
+					<a href="print2.html"><img src="img/portfolios/print/2.jpg" alt="" />
+					<div class="label">
+						<div class="label-text">
+							<a class="text-title">TXRX Identity</a>
+							<span class="text-category">Print</span>
+						</div>
+						<div class="label-bg"></div>
+					</div></a>
+				</div>
+			</div>	
+						
+			<div class="portfolio dimensional" data-cat="dimensional">
+				<div class="portfolio-wrapper">						
+					<a href="dimensional2.html"><img src="img/portfolios/dimensional/2.jpg" alt="" />
+					<div class="label">
+						<div class="label-text">
+							<a class="text-title">Go Buggy</a>
+							<span class="text-category">Dimensional</span>
+						</div>
+						<div class="label-bg"></div>
+					</div></a>
+				</div>
+			</div>				
+			
+			<div class="portfolio dimensional" data-cat="dimensional">
+				<div class="portfolio-wrapper">						
+					<a href="dimensional3.html"><img src="img/portfolios/dimensional/3.jpg" alt="" />
+					<div class="label">
+						<div class="label-text">
+							<a class="text-title">NIIW Product</a>
+							<span class="text-category">Dimensional</span>
+						</div>
+						<div class="label-bg"></div>
+					</div></a>
+				</div>
+			</div>		
+			
+			<div class="portfolio digital print" data-cat="digital">
+				<div class="portfolio-wrapper">			
+					<a href="digital2.html"><img src="img/portfolios/digital/2.jpg" alt="" />
+					<div class="label">
+						<div class="label-text">
+							<a class="text-title">Records for Life</a>
+							<span class="text-category">Digital and Print</span>
+						</div>
+						<div class="label-bg"></div>
+					</div></a>
+				</div>
+			</div>	
+			
+			<div class="portfolio digital" data-cat="digital">
+				<div class="portfolio-wrapper">			
+					<a href="digital3.html"><img src="img/portfolios/digital/3.jpg" alt="" />
+					<div class="label">
+						<div class="label-text">
+							<a class="text-title">Rebuild America Website</a>
+							<span class="text-category">Digital</span>
+						</div>
+						<div class="label-bg"></div>
+					</div></a>
+				</div>
+			</div>																																							
+			
+			<div class="portfolio digital" data-cat="digital">
+				<div class="portfolio-wrapper">			
+					<a href="digital4.html"><img src="img/portfolios/digital/4.jpg" alt="" />
+					<div class="label">
+						<div class="label-text">
+							<a class="text-title">James Jean Artist Website</a>
+							<span class="text-category">Digital</span>
+						</div>
+						<div class="label-bg"></div>
+					</div></a>
+				</div>
+			</div>														
+			
+			<div class="portfolio digital" data-cat="digital">
+				<div class="portfolio-wrapper">			
+					<a href="digital5.html"><img src="img/portfolios/digital/5.jpg" alt="" />
+					<div class="label">
+						<div class="label-text">
+							<a class="text-title">Houston Bicycle Museum Website</a>
+							<span class="text-category">Digital</span>
+						</div>
+						<div class="label-bg"></div>
+					</div></a>
+				</div>
+			</div>				
+
+			<div class="portfolio digital" data-cat="digital">
+				<div class="portfolio-wrapper">			
+					<a href="digital6.html"><img src="img/portfolios/digital/6.jpg" alt="" />
+					<div class="label">
+						<div class="label-text">
+							<a class="text-title">Nomadic Way Apps</a>
+							<span class="text-category">Digital</span>
+						</div>
+						<div class="label-bg"></div>
+					</div></a>
+				</div>
+			</div>																	
+
+			<div class="portfolio print" data-cat="print">
+				<div class="portfolio-wrapper">			
+					<a href="print3.html"><img src="img/portfolios/print/3.jpg" alt="" />
+					<div class="label">
+						<div class="label-text">
+							<a class="text-title">Master of Fine Arts 35th Thesis Show Collateral</a>
+							<span class="text-category">Print</span>
+						</div>
+						<div class="label-bg"></div>
+					</div></a>
+				</div>
+			</div>													
+			
+			<div class="portfolio digital" data-cat="digital">
+				<div class="portfolio-wrapper">			
+					<a href="digital7.html"><img src="img/portfolios/digital/7.jpg" alt="" />
+					<div class="label">
+						<div class="label-text">
+							<a class="text-title">Laundry Time</a>
+							<span class="text-category">Digital</span>
+						</div>
+						<div class="label-bg"></div>
+					</div></a>
+				</div>
+			</div>							
+
+
+			<div class="portfolio print" data-cat="print">
+				<div class="portfolio-wrapper">			
+					<a href="print4.html"><img src="img/portfolios/print/4.jpg" alt="" />
+					<div class="label">
+						<div class="label-text">
+							<a class="text-title">ASIMO</a>
+							<span class="text-category">Print</span>
+						</div>
+						<div class="label-bg"></div>
+					</div></a>
+				</div>
+			</div>																								
+
+			<div class="portfolio dimensional" data-cat="dimensional" >
+				<div class="portfolio-wrapper">						
+					<a href="dimensional4.html"><img src="img/portfolios/dimensional/4.jpg" alt="" />
+					<div class="label">
+						<div class="label-text">
+							<a class="text-title">ABCoaster</a>
+							<span class="text-category">Dimensional</span>
+						</div>
+						<div class="label-bg"></div>
+					</div></a>
+				</div>
+			</div>
+
+						<div class="portfolio print" data-cat="print">
+				<div class="portfolio-wrapper">			
+					<a href="print6.html"><img src="img/portfolios/print/6.jpg" alt="" />
+					<div class="label">
+						<div class="label-text">
+							<a class="text-title">Back to School Social</a>
+							<span class="text-category">Print</span>
+						</div>
+						<div class="label-bg"></div>
+					</div></a>
+				</div>
+			</div>								
+			
+
+									<div class="portfolio print" data-cat="print">
+				<div class="portfolio-wrapper">			
+					<a href="print7.html"><img src="img/portfolios/print/7.jpg" alt="" />
+					<div class="label">
+						<div class="label-text">
+							<a class="text-title">Garden Work Day</a>
+							<span class="text-category">Print</span>
+						</div>
+						<div class="label-bg"></div>
+					</div></a>
+				</div>
+			</div>								
+			
+		</div>
+
+	</div><!-- container -->
+
+</div>
+
+<div id="roots">
+			<img src="img/roots2.png" alt="Side bar" width="2000" height="70" />
+
+</body>
+</html>

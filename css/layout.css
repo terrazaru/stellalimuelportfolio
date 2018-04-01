@@ -1,0 +1,323 @@
+body {
+	font-family: 'Roboto', Arial, sans-serif;
+	margin:15px 0 0 0;
+	font-size:12px;
+}
+
+
+#ads {
+		display:none;
+	}
+
+#roots {position:absolute;
+		z-index: -1;
+		right: 0;
+		top: 80px;
+		}
+
+#info {			
+	width:95%;
+	max-width:960px;
+	margin:0 auto 40px auto;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-o-box-sizing: border-box;
+}
+
+#info img {border: none;}
+
+	#info .info-wrapper {
+		padding:10px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-o-box-sizing: border-box;
+
+	}
+
+#buttons {text-align: right;
+			opacity:0.8;
+			}
+
+.buttons {font-family: 'core_mellow_19_cp_thinregular', Arial, sans-serif;
+	font-size: 200%;
+	}
+
+.buttons a:link {	text-decoration: none;
+				color: #069995;
+				}
+
+.buttons a:visited {	color: #069995;
+					}
+
+.buttons a:hover {	color: #666;
+					}
+
+.buttons ul {padding: 0;
+			margin: -15px 0 -15px 0;}
+
+.buttons li	{	display: inline-block;
+				margin-right: 20px;
+				}
+
+
+.buttons {	list-style-type: none;
+			margin-left: -20px;}
+
+nav {	margin-left: 250px;
+	margin-top: -41px;
+	font-size:120%;
+		}
+
+nav ul {	list-style-type: none;
+			padding: 0;
+			color: #069995;
+			font-size: 110%;
+			}
+				
+nav li	{	display: inline-block;
+			padding:5px 20px;	
+			}
+
+
+nav a:link {	text-decoration: none;
+				color: #069995;
+				}
+
+nav a:visited {	color: #069995;
+					}
+
+nav a:hover {	color: #666;
+					}
+
+#intro a {text-decoration: none;
+			color: #069995;
+			font-style: italic;
+			}
+
+#desc {margin-right: auto;
+		margin-left: auto;
+		max-width: 800px;}
+
+#intro a:hover {	color: #666;
+					cursor: pointer;
+					}
+
+#introp {float:left;
+		margin-right:35px;
+		-webkit-transition: all 1s ease;
+  		-moz-transition: all 1s ease;
+  		-o-transition: all 1s ease;
+  		transition: all 1s ease;	}
+
+#photo {width:310px;height:310px;margin: 0 0 15px 0;}
+
+.flexslider img {max-width:100%; height:auto; clear:both; margin:0px auto;}
+
+.container { 
+	position: relative; 
+	width: 960px; 
+	margin: 0 auto; 
+	-webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  transition: all 1s ease;	
+}
+ 
+#filters {
+	margin:1%;
+	padding:0;
+	list-style:none;
+}
+
+	#filters li {
+		float:left;
+	}
+	
+	#filters li span {
+		display: block;
+		padding:5px 20px;		
+		text-decoration:none;
+		color:#666;
+		cursor: pointer;
+	}
+	
+	#filters li span.active {
+		background: #069995;
+		color:#fff;
+	}
+ 
+
+ 
+#portfoliolist .portfolio {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	width:23%;
+	margin:1%;
+	display:none;
+	float:left;
+	overflow:hidden;
+}
+
+	.portfolio-wrapper {
+		overflow:hidden;
+		position: relative !important;
+		background: #666;
+		cursor:pointer;
+	}
+
+	.portfolio img {
+		max-width:100%;
+		position: relative;
+	}
+	
+	.portfolio .label {
+		position: absolute;
+		width: 100%;
+		height:40px;
+		bottom:-40px;
+	}
+
+		.portfolio .label-bg {
+			background: #069995;
+			width: 100%;
+			height:100%;
+			position: absolute;
+			top:0;
+			left:0;
+		}
+	
+		.portfolio .label-text {
+			color:#fff;
+			position: relative;
+			z-index:500;
+			padding:5px 8px;
+		}
+			
+			.portfolio .text-category {
+				display:block;
+				font-size:9px;
+			}
+	
+	
+#socmed { list-style: none;
+		padding: 10px 0 0 0;
+		}
+
+#socmed a {text-decoration: none;
+			color: #069995;
+			}
+
+#socmed a:hover {	color: #666;
+					cursor: pointer;
+					}
+
+#socmed li	{display: inline-block;
+				margin: 1%;}
+
+
+
+
+/* #Tablet (Portrait) */
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+	.container {
+		width: 768px; 
+	}
+
+	#introp {float:left;
+		margin-right:0;}
+
+#photo {width:340px;height:auto;margin: 0 0 15px 0;}
+
+}
+
+
+/*  #Mobile (Portrait) - Note: Design for a width of 320px */
+@media only screen and (max-width: 767px) {
+	.container { 
+		width: 95%; 
+	}
+	
+	#portfoliolist .portfolio {
+		width:48%;
+		margin:1%;
+	}		
+
+	#ads {
+		display:none;
+	}
+
+	#socmed {margin-left: -20px;
+
+	}
+
+nav {	position: absolute;
+	right: 2px;
+	top: 35px;
+		}
+
+nav ul {	list-style-type: none;
+			padding: 0;
+			color: #069995;
+			font-size: 100%;
+			}
+				
+nav li	{	display: block;
+			padding:5px 10px;
+			}
+
+#introp {float:left;
+		margin-right:0;}
+
+
+#photo {width:340px;height:auto;margin: 0 0 15px 0;}
+
+}
+
+/* #Mobile (Landscape) - Note: Design for a width of 480px */
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+	.container {
+		width: 70%;
+	}
+	
+	#ads {
+		display:none;
+	}
+
+	#introp {float:left;
+		margin-right:0;}
+
+	#photo {width:340px;height:auto;margin: 0 0 15px 0;}
+
+}
+
+/* #Clearing */
+
+/* Self Clearing Goodness */
+.container:after { content: "\0020"; display: block; height: 0; clear: both; visibility: hidden; }
+
+.clearfix:before,
+.clearfix:after,
+.row:before,
+.row:after {
+  content: '\0020';
+  display: block;
+  overflow: hidden;
+  visibility: hidden;
+  width: 0;
+  height: 0; }
+.row:after,
+.clearfix:after {
+  clear: both; }
+.row,
+.clearfix {
+  zoom: 1; }
+
+.clear {
+  clear: both;
+  display: block;
+  overflow: hidden;
+  visibility: hidden;
+  width: 0;
+  height: 0;
+}
